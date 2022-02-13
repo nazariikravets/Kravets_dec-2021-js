@@ -100,6 +100,9 @@ for (const differentElement of different) {
 // - Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
 // - Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
 
+
+
+
 let pusA=[]
 pusA[0]=35322
 pusA[1]='varr'
