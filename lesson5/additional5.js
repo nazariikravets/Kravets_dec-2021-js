@@ -38,19 +38,20 @@ fnnaturalAB(30,23)
 //   foo([9,8,0,4], 2) // ==> [ 9, 8, 4, 0 ]
 //
 let foo=[9,8,0,4]
-let afnarrayI=(array,i)=>{
+let afnarrayI=(array,j)=>{
     let  number=[]
-
-    let j;
-    for (j = 0; j < array.length; j++) {
-        if (j = i) {
-            j = j + 1
+    let num=0
+    for (i = 0; i < array.length; i++) {
+        if (j===i) {
+            num=array[i]
+            array[i]=array[i+1]
+            array[i+1]=num
         }
-        number[number.length] = array[j]
+        number[number.length] = array[i]
     }
     console.log(number)
 }
-afnarrayI(foo,0)
+afnarrayI(foo,2)
 
 
 // - Сворити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
@@ -59,3 +60,25 @@ afnarrayI(foo,0)
 // [1,0,6,0,3] => [1,6,3,0,0]
 // [0,1,2,3,4] => [1,2,3,4,0]
 // [0,0,1,0]   => [1,0,0,0]
+ let fooNumber=[1,0,6,0,3,3,5,0,5]
+let fn=(array)=>{
+    let nam=[]
+    let nam2=[]
+    let result=[]
+    for (i=0; i<array.length;i++){
+        if (array[i]===0){
+            nam[nam.length]=array[i]
+        }
+        else if (array[i]!==0){
+            nam2[nam2.length]=array[i]
+        }
+    }
+    for (i=0;i<nam2.length; i++){
+        result[result.length]=nam2[i]
+    }
+    for (i=0;i<nam.length; i++){
+        result[result.length]=nam[i]
+    }
+    console.log(result)
+}
+fn(fooNumber)
