@@ -45,25 +45,24 @@
 </div>
 
 <script>
-
+    let array = []
     function rec(start) {
-
-        let aray = []
 
         let startElement = start.children
         for (const element of startElement) {
             if (element.className) {
-                aray.push(element.className)
-                console.log(aray)
-
+                let classArray=element.className.split(' ')
+                for (const string of classArray) {
+                    array.push(string)
+                }
             }
-
             rec(element)
         }
-
+return array
     }
 
    rec(document.body)
+    console.log(array)
 
 //     Не розумію як зробити так щоб з функції повертвся масив після того як ми за допомогою рекурсії перебрали всі елементи
 // а не перед першою рекурсією
