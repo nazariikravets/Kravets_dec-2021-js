@@ -1,0 +1,15 @@
+.wrap{
+    display: flex;
+    justify-content: center;
+    width: 1400px;
+    flex-wrap: wrap;
+
+}
+.post{
+    height: 400px;
+    width: 240px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
