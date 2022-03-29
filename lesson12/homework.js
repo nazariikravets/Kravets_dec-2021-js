@@ -26,14 +26,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
             div.appendChild(divPost)
         }
         document.body.appendChild(div)
-
-
-
-
     })
-
-
-
 
 
 
@@ -45,3 +38,29 @@ fetch('https://jsonplaceholder.typicode.com/posts')
 //     Для кожного елементу свій блок div.comment
 // Всі характеристики повинні мати свої блоки всередені div.comment
 // https://jsonplaceholder.typicode.com/comments
+
+fetch('https://jsonplaceholder.typicode.com/comments')
+    .then(comments=>comments.json())
+    .then(comments=>{
+        console.log(comments)
+        let divComments = document.createElement('div');
+        divComments.classList.add('wrap')
+        for (const element of comments) {
+            let divComment = document.createElement('div');
+            divComment.classList.add('comment')
+            let postId = document.createElement('div');
+            let id = document.createElement('div');
+            let name = document.createElement('h3');
+            let email = document.createElement('div');
+            let body = document.createElement('p');
+            postId.innerText=element.postId
+            id.innerText=element.id
+            name.innerText=element.name
+            email.innerText=element.email
+            body.innerText=element.body
+            divComment.append(postId,id,name,email,body)
+            divComments.append(divComment)
+
+        }
+        document.body.appendChild(divComments)
+    })

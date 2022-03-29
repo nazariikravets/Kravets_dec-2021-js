@@ -12,4 +12,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1px solid blue;
+}
+.comment{
+    height: 400px;
+    width: 240px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid silver;
 }
