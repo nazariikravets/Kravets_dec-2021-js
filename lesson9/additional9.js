@@ -233,6 +233,7 @@ let usersList = [
 
 for (const element of usersList) {
     let divBloc = document.createElement('div');
+    divBloc.classList.add('userinfo')
     let idDiv = document.createElement('div');
     idDiv.innerText = element.id
     let nameDiv = document.createElement('div');

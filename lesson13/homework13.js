@@ -33,6 +33,11 @@ console.log(`${time}-Прокинутись`)
 
 
 
+
+
+
+
+
 new Promise((resolve, reject) =>{
     let time=9
     setTimeout(()=>{

@@ -1,0 +1,26 @@
+.conteiner{
+    background: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn2{
+    width: 90%;
+}
+.postTitle{
+    display: flex;
+    flex-wrap: wrap;
+}
+.postbtn3{
+    height: 200px;
+    width: 100px;
+    margin: 10px;
+    margin-right: calc(10% - 50px);
+    margin-left: calc(10% - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: silver;
+}

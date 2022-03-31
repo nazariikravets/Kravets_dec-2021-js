@@ -1,0 +1,17 @@
+.commentPost{
+    display: flex;
+    margin-top: 20px;
+}
+.postInfiDiv{
+    background: azure;
+
+}
+.bodyComment{
+    width: 140px;
+    background: yellow;
+    margin-left: calc(10% - 70px);
+    margin-right: calc(10% - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
