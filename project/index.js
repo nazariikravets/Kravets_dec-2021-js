@@ -22,3 +22,4 @@ location.href=`./user-details.html?date=${JSON.stringify(user)}`
 
     })
 document.body.appendChild(divConteiner)
+
